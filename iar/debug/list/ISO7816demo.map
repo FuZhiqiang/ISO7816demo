@@ -1,0 +1,569 @@
+###############################################################################
+#
+# IAR ELF Linker V7.40.3.8902/W32 for ARM                 29/Sep/2015  14:34:11
+# Copyright 2007-2015 IAR Systems AB.
+#
+#    Output file  =  
+#        D:\work\Applications\AppNote\ISO7816demo\iar\debug\ISO7816demo.out
+#    Map file     =  
+#        D:\work\Applications\AppNote\ISO7816demo\iar/debug/list\ISO7816demo.map
+#    Command line =  
+#        D:\work\Applications\AppNote\ISO7816demo\iar\debug\obj\fsl_debug_console.o
+#        D:\work\Applications\AppNote\ISO7816demo\iar\debug\obj\ISO7816.o
+#        D:\work\Applications\AppNote\ISO7816demo\iar\debug\obj\main.o
+#        D:\work\Applications\AppNote\ISO7816demo\iar\debug\obj\print_scan.o
+#        D:\work\Applications\AppNote\ISO7816demo\iar\debug\obj\startup.o
+#        D:\work\Applications\AppNote\ISO7816demo\iar\debug\obj\startup_MKL03Z4.o
+#        D:\work\Applications\AppNote\ISO7816demo\iar\debug\obj\system_MKL03Z4.o
+#        --redirect _Printf=_PrintfSmall --redirect _Scanf=_ScanfSmall -o
+#        D:\work\Applications\AppNote\ISO7816demo\iar\debug\ISO7816demo.out
+#        --map
+#        D:\work\Applications\AppNote\ISO7816demo\iar/debug/list\ISO7816demo.map
+#        --config
+#        D:\work\Applications\AppNote\ISO7816demo\iar/../platform/devices/MKL03Z4/linker/iar/MKL03Z32xxx4_flash.icf
+#        --semihosting
+#        D:\work\Applications\AppNote\ISO7816demo\iar/../lib/ksdk_platform_lib/iar/KL03Z4/debug/libksdk_platform.a
+#        --entry __iar_program_start --vfe
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__Heap_Handler  = DLMalloc
+__SystemLibrary = DLib
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at 0x00000000 { ro section .intvec };
+"P1":  place in [from 0x00000400 to 0x0000040f] { section FlashConfig };
+"P2":  place in [from 0x00000000 to 0x000000ff] |
+                [from 0x00000410 to 0x00007fff] { ro };
+"P3":  place in [from 0x1ffffe00 to 0x200005af] { block RW };
+"P4":  place in [from 0x1ffffe00 to 0x200005af] { block ZI };
+"P6":  place in [from 0x200005b0 to 0x200005ff] { block CSTACK };
+
+  Section            Kind        Address    Size  Object
+  -------            ----        -------    ----  ------
+"A1":                                       0xc0
+  .intvec            ro code  0x00000000    0xc0  startup_MKL03Z4.o [1]
+                            - 0x000000c0    0xc0
+
+"P2", part 1 of 2:                           0x0
+  .rodata            const    0x000000c0     0x0  zero_init3.o [5]
+  .rodata            const    0x000000c0     0x0  copy_init3.o [5]
+
+"P1":                                       0x10
+  FlashConfig        ro code  0x00000400    0x10  startup_MKL03Z4.o [1]
+                            - 0x00000410    0x10
+
+"P2", part 2 of 2:                        0x2b77
+  .text              ro code  0x00000410   0x4f0  fsl_tpm_driver.o [4]
+  .text              ro code  0x00000900    0x24  ABIassert.o [6]
+  .text              ro code  0x00000924    0xcc  fsl_sim_hal_MKL03Z4.o [4]
+  .text              ro code  0x000009f0   0x29c  fsl_clock_MKL03Z4.o [4]
+  .text              ro code  0x00000c8c   0x1ac  fsl_tpm_hal.o [4]
+  .text              ro code  0x00000e38    0xae  I32DivModFast.o [5]
+  .text              ro code  0x00000ee6     0xa  abort.o [3]
+  .text              ro code  0x00000ef0   0x130  fsl_clock_manager.o [4]
+  .text              ro code  0x00001020    0xc8  fsl_mcglite_hal.o [4]
+  .text              ro code  0x000010e8     0x2  IntDivZer.o [5]
+  .rodata            const    0x000010ea     0x2  fsl_clock_MKL03Z4.o [4]
+  .text              ro code  0x000010ec    0x14  exit.o [6]
+  .text              ro code  0x00001100   0x1ac  fsl_mcglite_hal_modes.o [4]
+  .text              ro code  0x000012ac   0x4c8  fsl_lpuart_driver.o [4]
+  .text              ro code  0x00001774    0x54  ABImemset.o [5]
+  .text              ro code  0x000017c8   0x334  fsl_lpuart_hal.o [4]
+  .text              ro code  0x00001afc   0x15c  fsl_os_abstraction_bm.o [4]
+  .text              ro code  0x00001c58    0x80  fsl_lptmr_hal.o [4]
+  .text              ro code  0x00001cd8    0x34  fsl_interrupt_manager.o [4]
+  .text              ro code  0x00001d0c   0x348  fsl_gpio_driver.o [4]
+  .text              ro code  0x00002054    0x7c  fsl_gpio_hal.o [4]
+  .text              ro code  0x000020d0   0x288  ISO7816.o [1]
+  .text              ro code  0x00002358    0x90  main.o [1]
+  .rodata            const    0x000023e8    0x84  fsl_gpio_driver.o [4]
+  .rodata            const    0x0000246c    0x84  fsl_lpuart_driver.o [4]
+  .rodata            const    0x000024f0    0x84  fsl_tpm_driver.o [4]
+  .rodata            const    0x00002574    0x78  fsl_gpio_driver.o [4]
+  .rodata            const    0x000025ec    0x78  fsl_gpio_driver.o [4]
+  .rodata            const    0x00002664    0x78  fsl_tpm_driver.o [4]
+  .rodata            const    0x000026dc    0x78  fsl_tpm_hal.o [4]
+  .rodata            const    0x00002754    0x60  fsl_clock_MKL03Z4.o [4]
+  .rodata            const    0x000027b4    0x5c  fsl_lpuart_driver.o [4]
+  .rodata            const    0x00002810    0x5c  fsl_sim_hal_MKL03Z4.o [4]
+  .rodata            const    0x0000286c    0x58  fsl_clock_manager.o [4]
+  .rodata            const    0x000028c4    0x54  fsl_os_abstraction_bm.o [4]
+  .rodata            const    0x00002918    0x54  fsl_tpm_driver.o [4]
+  .rodata            const    0x0000296c    0x50  ISO7816.o [1]
+  .rodata            const    0x000029bc    0x50  fsl_tpm_driver.o [4]
+  .rodata            const    0x00002a0c    0x50  fsl_gpio_hal.o [4]
+  .text              ro code  0x00002a5c    0x48  startup.o [1]
+  .rodata            const    0x00002aa4    0x40  fsl_clock_MKL03Z4.o [4]
+  .rodata            const    0x00002ae4    0x3c  fsl_clock_MKL03Z4.o [4]
+  .text              ro code  0x00002b20    0x3c  zero_init3.o [5]
+  .rodata            const    0x00002b5c    0x38  fsl_clock_MKL03Z4.o [4]
+  .rodata            const    0x00002b94    0x30  fsl_clock_manager.o [4]
+  .text              ro code  0x00002bc4    0x30  copy_init3.o [5]
+  .rodata            const    0x00002bf4    0x2c  fsl_gpio_driver.o [4]
+  .rodata            const    0x00002c20    0x2c  fsl_lpuart_driver.o [4]
+  .rodata            const    0x00002c4c    0x2c  fsl_tpm_driver.o [4]
+  .rodata            const    0x00002c78    0x28  fsl_tpm_driver.o [4]
+  .rodata            const    0x00002ca0    0x28  fsl_tpm_driver.o [4]
+  .rodata            const    0x00002cc8    0x28  fsl_tpm_hal.o [4]
+  .text              ro code  0x00002cf0    0x28  system_MKL03Z4.o [1]
+  .text              ro code  0x00002d18    0x28  data_init.o [5]
+  .rodata            const    0x00002d40    0x24  fsl_lpuart_driver.o [4]
+  .rodata            const    0x00002d64    0x24  fsl_lpuart_driver.o [4]
+  .iar.init_table    const    0x00002d88    0x24  - Linker created -
+  .rodata            const    0x00002dac    0x20  fsl_tpm_driver.o [4]
+  .rodata            const    0x00002dcc    0x20  fsl_tpm_driver.o [4]
+  .rodata            const    0x00002dec    0x20  fsl_sim_hal_MKL03Z4.o [4]
+  .text              ro code  0x00002e0c    0x1c  startup_MKL03Z4.o [1]
+  .text              ro code  0x00002e28    0x1a  cmain.o [5]
+  .text              ro code  0x00002e42     0x4  low_level_init.o [3]
+  .text              ro code  0x00002e46     0x8  exit.o [3]
+  .rodata            const    0x00002e4e     0x2  fsl_clock_MKL03Z4.o [4]
+  .text              ro code  0x00002e50     0xa  cexit.o [5]
+  .rodata            const    0x00002e5a     0x2  fsl_gpio_common.o [4]
+  Initializer bytes  const    0x00002e5c    0x1c  <for RW-1>
+  .rodata            const    0x00002e78     0x2  fsl_tpm_common.o [4]
+  .rodata            const    0x00002e7c    0x18  ISO7816.o [1]
+  .rodata            const    0x00002e94    0x10  fsl_clock_MKL03Z4.o [4]
+  .rodata            const    0x00002ea4    0x10  fsl_gpio_driver.o [4]
+  .rodata            const    0x00002eb4    0x10  fsl_lpuart_driver.o [4]
+  .rodata            const    0x00002ec4    0x10  fsl_tpm_driver.o [4]
+  .rodata            const    0x00002ed4     0xc  ISO7816.o [1]
+  .rodata            const    0x00002ee0     0xc  ISO7816.o [1]
+  .rodata            const    0x00002eec     0xc  main.o [1]
+  .rodata            const    0x00002ef8     0xc  fsl_gpio_driver.o [4]
+  .rodata            const    0x00002f04     0xc  fsl_gpio_driver.o [4]
+  .rodata            const    0x00002f10     0xc  fsl_gpio_hal.o [4]
+  .rodata            const    0x00002f1c     0xc  fsl_tpm_hal.o [4]
+  .text              ro code  0x00002f28     0xc  cstartup_M.o [5]
+  .rodata            const    0x00002f34     0x8  ISO7816.o [1]
+  .rodata            const    0x00002f3c     0x8  fsl_lpuart_driver.o [4]
+  .rodata            const    0x00002f44     0x8  fsl_os_abstraction_bm.o [4]
+  .rodata            const    0x00002f4c     0x8  fsl_gpio_common.o [4]
+  .rodata            const    0x00002f54     0x8  fsl_gpio_common.o [4]
+  .rodata            const    0x00002f5c     0x8  fsl_tpm_hal.o [4]
+  .rodata            const    0x00002f64     0x8  fsl_tpm_common.o [4]
+  .text              ro code  0x00002f6c     0x8  startup_MKL03Z4.o [1]
+  .rodata            const    0x00002f74     0x4  fsl_clock_manager_common.o [4]
+  .rodata            const    0x00002f78     0x4  fsl_lpuart_common.o [4]
+  .text              ro code  0x00002f7c     0x2  startup_MKL03Z4.o [1]
+  .text              ro code  0x00002f7e     0x2  startup_MKL03Z4.o [1]
+  .text              ro code  0x00002f80     0x2  startup_MKL03Z4.o [1]
+  .text              ro code  0x00002f82     0x2  startup_MKL03Z4.o [1]
+  .text              ro code  0x00002f84     0x2  startup_MKL03Z4.o [1]
+  .rodata            const    0x00002f86     0x1  fsl_clock_MKL03Z4.o [4]
+                            - 0x00002f87  0x2b77
+
+"P3":                                       0x1c
+  RW                          0x1ffffe00    0x1c  <Block>
+    RW-1                      0x1ffffe00    0x19  <Init block>
+      .data          inited   0x1ffffe00     0xc  ISO7816.o [1]
+      .data          inited   0x1ffffe0c     0x8  main.o [1]
+      .data          inited   0x1ffffe14     0x4  system_MKL03Z4.o [1]
+      .data          inited   0x1ffffe18     0x1  fsl_lpuart_common.o [4]
+                            - 0x1ffffe1c    0x1c
+
+"P4":                                       0xbc
+  ZI                          0x1ffffe1c    0xbc  <Block>
+    .bss             zero     0x1ffffe1c    0x24  ISO7816.o [1]
+    .bss             zero     0x1ffffe40    0x3c  ISO7816.o [1]
+    .bss             zero     0x1ffffe7c    0x40  ISO7816.o [1]
+    .bss             zero     0x1ffffebc     0x4  ISO7816.o [1]
+    .bss             zero     0x1ffffec0     0x8  fsl_clock_MKL03Z4.o [4]
+    .bss             zero     0x1ffffec8     0x4  fsl_mcglite_hal.o [4]
+    .bss             zero     0x1ffffecc     0x4  fsl_lpuart_common.o [4]
+    .bss             zero     0x1ffffed0     0x4  fsl_interrupt_manager.o [4]
+    .bss             zero     0x1ffffed4     0x1  fsl_tpm_driver.o [4]
+                            - 0x1ffffed8    0xbc
+
+"P6":                                       0x50
+  CSTACK                      0x200005b0    0x50  <Block>
+    CSTACK           uninit   0x200005b0    0x50  <Block tail>
+                            - 0x20000600    0x50
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0xb9:
+          0x1ffffe1c  0xb9
+
+Copy (__iar_copy_init3)
+    1 source range, total size 0x1c (112% of destination):
+          0x00002e5c  0x1c
+    1 destination range, total size 0x19:
+          0x1ffffe00  0x19
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                      ro code  ro data  rw data
+    ------                      -------  -------  -------
+D:\work\Applications\AppNote\ISO7816demo\iar\debug\obj: [1]
+    ISO7816.o                       648      148      176
+    main.o                          144       20        8
+    startup.o                        72
+    startup_MKL03Z4.o               254
+    system_MKL03Z4.o                 40        4        4
+    -----------------------------------------------------
+    Total:                        1 158      172      188
+
+command line: [2]
+    -----------------------------------------------------
+    Total:
+
+dl6M_tln.a: [3]
+    abort.o                          10
+    exit.o                            8
+    low_level_init.o                  4
+    -----------------------------------------------------
+    Total:                           22
+
+libksdk_platform.a: [4]
+    fsl_clock_MKL03Z4.o             668      297        8
+    fsl_clock_manager.o             304      136
+    fsl_clock_manager_common.o                 4
+    fsl_gpio_common.o                         18
+    fsl_gpio_driver.o               840      456
+    fsl_gpio_hal.o                  124       92
+    fsl_interrupt_manager.o          52                 4
+    fsl_lptmr_hal.o                 128
+    fsl_lpuart_common.o                        5        5
+    fsl_lpuart_driver.o           1 224      364
+    fsl_lpuart_hal.o                820
+    fsl_mcglite_hal.o               200                 4
+    fsl_mcglite_hal_modes.o         428
+    fsl_os_abstraction_bm.o         348       92
+    fsl_sim_hal_MKL03Z4.o           204      124
+    fsl_tpm_common.o                          10
+    fsl_tpm_driver.o              1 264      620        1
+    fsl_tpm_hal.o                   428      180
+    -----------------------------------------------------
+    Total:                        7 032    2 398       22
+
+rt6M_tl.a: [5]
+    ABImemset.o                      84
+    I32DivModFast.o                 174
+    IntDivZer.o                       2
+    cexit.o                          10
+    cmain.o                          26
+    copy_init3.o                     48
+    cstartup_M.o                     12
+    data_init.o                      40
+    zero_init3.o                     60
+    -----------------------------------------------------
+    Total:                          456
+
+shb_l.a: [6]
+    ABIassert.o                      36
+    exit.o                           20
+    -----------------------------------------------------
+    Total:                           56
+
+    Gaps                                       2
+    Linker created                            39       80
+---------------------------------------------------------
+    Grand Total:                  8 724    2 611      290
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address   Size  Type      Object
+-----                      -------   ----  ----      ------
+.iar.init_table$$Base   0x00002d88          --   Gb  - Linker created -
+.iar.init_table$$Limit  0x00002dac          --   Gb  - Linker created -
+?main                   0x00002e29         Code  Gb  cmain.o [5]
+CLOCK_HAL_GetClkSrcStat
+                        0x00001021    0xc  Code  Lc  fsl_mcglite_hal.o [4]
+CLOCK_HAL_GetClkSrcStat
+                        0x00001121    0xc  Code  Lc  fsl_mcglite_hal_modes.o [4]
+CLOCK_HAL_GetInternalRefClk
+                        0x00001067   0x24  Code  Gb  fsl_mcglite_hal.o [4]
+CLOCK_HAL_GetLircClk    0x0000102d   0x3a  Code  Gb  fsl_mcglite_hal.o [4]
+CLOCK_HAL_GetLpuartSrc  0x00000a21    0xe  Code  Lc  fsl_clock_MKL03Z4.o [4]
+CLOCK_HAL_GetMode       0x00001149   0x50  Code  Gb  fsl_mcglite_hal_modes.o [4]
+CLOCK_HAL_GetOutClk     0x0000108b   0x3e  Code  Gb  fsl_mcglite_hal.o [4]
+CLOCK_HAL_GetOutDiv1    0x00000a49    0xe  Code  Lc  fsl_clock_MKL03Z4.o [4]
+CLOCK_HAL_GetTpmSrc     0x00000a2f    0xe  Code  Lc  fsl_clock_MKL03Z4.o [4]
+CLOCK_HAL_IsOscStable   0x0000112d   0x1c  Code  Lc  fsl_mcglite_hal_modes.o [4]
+CLOCK_HAL_SetExtMode    0x00001247   0x4a  Code  Gb  fsl_mcglite_hal_modes.o [4]
+CLOCK_HAL_SetExternalRefClock32kSrc
+                        0x00000a3d    0xc  Code  Lc  fsl_clock_MKL03Z4.o [4]
+CLOCK_HAL_SetHircCmd    0x00000f21   0x14  Code  Lc  fsl_clock_manager.o [4]
+CLOCK_HAL_SetHircCmd    0x0000110d   0x14  Code  Lc  fsl_mcglite_hal_modes.o [4]
+CLOCK_HAL_SetHircMode   0x00001199   0x28  Code  Gb  fsl_mcglite_hal_modes.o [4]
+CLOCK_HAL_SetLircCmd    0x00000f0b    0xc  Code  Lc  fsl_clock_manager.o [4]
+CLOCK_HAL_SetLircCmd    0x00001101    0xc  Code  Lc  fsl_mcglite_hal_modes.o [4]
+CLOCK_HAL_SetLircDiv2   0x00000eff    0xc  Code  Lc  fsl_clock_manager.o [4]
+CLOCK_HAL_SetLircMode   0x000011c1   0x86  Code  Gb  fsl_mcglite_hal_modes.o [4]
+CLOCK_HAL_SetLircSelMode
+                        0x00000ef1    0xe  Code  Lc  fsl_clock_manager.o [4]
+CLOCK_HAL_SetLircStopCmd
+                        0x00000f17    0xa  Code  Lc  fsl_clock_manager.o [4]
+CLOCK_HAL_SetLpuartSrc  0x00001301   0x14  Code  Lc  fsl_lpuart_driver.o [4]
+CLOCK_HAL_SetOutDiv     0x00000925   0x24  Code  Gb  fsl_sim_hal_MKL03Z4.o [4]
+CLOCK_HAL_SetTpmSrc     0x00000561   0x14  Code  Lc  fsl_tpm_driver.o [4]
+CLOCK_SYS_EnableLptmrClock
+                        0x00001b2d    0xe  Code  Lc  fsl_os_abstraction_bm.o [4]
+CLOCK_SYS_EnableLpuartClock
+                        0x00000c21   0x24  Code  Gb  fsl_clock_MKL03Z4.o [4]
+CLOCK_SYS_EnablePortClock
+                        0x00000be1   0x24  Code  Gb  fsl_clock_MKL03Z4.o [4]
+CLOCK_SYS_EnableTpmClock
+                        0x00000c49   0x22  Code  Gb  fsl_clock_MKL03Z4.o [4]
+CLOCK_SYS_GetCoreClockFreq
+                        0x00000add   0x1c  Code  Gb  fsl_clock_MKL03Z4.o [4]
+CLOCK_SYS_GetLpuartFreq
+                        0x00000b6d   0x3e  Code  Gb  fsl_clock_MKL03Z4.o [4]
+CLOCK_SYS_GetOsc0ExternalRefClockFreq
+                        0x00000b01   0x18  Code  Gb  fsl_clock_MKL03Z4.o [4]
+CLOCK_SYS_GetTpmExternalFreq
+                        0x00000bb9   0x20  Code  Gb  fsl_clock_MKL03Z4.o [4]
+CLOCK_SYS_GetTpmFreq    0x00000b25   0x3e  Code  Gb  fsl_clock_MKL03Z4.o [4]
+CLOCK_SYS_SetConfiguration
+                        0x00000a91   0x4c  Code  Gb  fsl_clock_MKL03Z4.o [4]
+CLOCK_SYS_SetLpuartSrc  0x00001315   0x14  Code  Lc  fsl_lpuart_driver.o [4]
+CLOCK_SYS_SetMcgliteMode
+                        0x00000f51   0x9a  Code  Gb  fsl_clock_manager.o [4]
+CLOCK_SYS_SetOscerConfigration
+                        0x00000ff1   0x24  Code  Gb  fsl_clock_manager.o [4]
+CLOCK_SYS_SetSimConfigration
+                        0x00000a71   0x20  Code  Lc  fsl_clock_MKL03Z4.o [4]
+CLOCK_SYS_SetTpmExternalSrc
+                        0x00000589   0x14  Code  Lc  fsl_tpm_driver.o [4]
+CLOCK_SYS_SetTpmSrc     0x00000575   0x14  Code  Lc  fsl_tpm_driver.o [4]
+CSTACK$$Base            0x200005b0          --   Gb  - Linker created -
+CSTACK$$Limit           0x20000600          --   Gb  - Linker created -
+GPIO_DRV_ClearPinOutput
+                        0x00002011   0x1e  Code  Gb  fsl_gpio_driver.o [4]
+GPIO_DRV_Init           0x00001edd   0x38  Code  Gb  fsl_gpio_driver.o [4]
+GPIO_DRV_InputPinInit   0x00001f15   0x7a  Code  Gb  fsl_gpio_driver.o [4]
+GPIO_DRV_OutputPinInit  0x00001f8f   0x5a  Code  Gb  fsl_gpio_driver.o [4]
+GPIO_DRV_SetPinOutput   0x00001fed   0x1e  Code  Gb  fsl_gpio_driver.o [4]
+GPIO_HAL_ClearPinOutput
+                        0x00001e79   0x20  Code  Lc  fsl_gpio_driver.o [4]
+GPIO_HAL_SetPinDir      0x00002055   0x46  Code  Gb  fsl_gpio_hal.o [4]
+GPIO_HAL_SetPinOutput   0x00001e59   0x20  Code  Lc  fsl_gpio_driver.o [4]
+GPIO_HAL_WritePinOutput
+                        0x0000209b   0x2e  Code  Gb  fsl_gpio_hal.o [4]
+INT_SYS_DisableIRQGlobal
+                        0x00001cf9    0xe  Code  Gb  fsl_interrupt_manager.o [4]
+INT_SYS_EnableIRQ       0x00001e99   0x36  Code  Lc  fsl_gpio_driver.o [4]
+INT_SYS_EnableIRQ       0x00001329   0x36  Code  Lc  fsl_lpuart_driver.o [4]
+INT_SYS_EnableIRQ       0x00000519   0x36  Code  Lc  fsl_tpm_driver.o [4]
+INT_SYS_EnableIRQGlobal
+                        0x00001cd9   0x20  Code  Gb  fsl_interrupt_manager.o [4]
+Iso7816Activate         0x00002291   0x76  Code  Gb  ISO7816.o [1]
+Iso7816Deactivate       0x00002277   0x1a  Code  Gb  ISO7816.o [1]
+Iso7816Init             0x000021bb   0xbc  Code  Gb  ISO7816.o [1]
+LPTMR_HAL_Disable       0x00001b47    0xc  Code  Lc  fsl_os_abstraction_bm.o [4]
+LPTMR_HAL_Enable        0x00001b3b    0xc  Code  Lc  fsl_os_abstraction_bm.o [4]
+LPTMR_HAL_GetCounterValue
+                        0x00001cbd   0x16  Code  Gb  fsl_lptmr_hal.o [4]
+LPTMR_HAL_SetIntCmd     0x00001b53    0xe  Code  Lc  fsl_os_abstraction_bm.o [4]
+LPTMR_HAL_SetPrescalerMode
+                        0x00001c97   0x26  Code  Gb  fsl_lptmr_hal.o [4]
+LPTMR_HAL_SetTimerWorkingMode
+                        0x00001c59   0x3e  Code  Gb  fsl_lptmr_hal.o [4]
+LPUART0_IRQHandler      0x0000216f    0xa  Code  Gb  ISO7816.o [1]
+LPUART_DRV_CompleteReceiveData
+                        0x000016f5   0x52  Code  Lc  fsl_lpuart_driver.o [4]
+LPUART_DRV_CompleteSendData
+                        0x000016ad   0x48  Code  Lc  fsl_lpuart_driver.o [4]
+LPUART_DRV_IRQHandler   0x00001559   0xee  Code  Gb  fsl_lpuart_driver.o [4]
+LPUART_DRV_Init         0x0000135f   0xd0  Code  Gb  fsl_lpuart_driver.o [4]
+LPUART_DRV_InstallRxCallback
+                        0x0000142f   0x56  Code  Gb  fsl_lpuart_driver.o [4]
+LPUART_DRV_InstallTxCallback
+                        0x00001485   0x2e  Code  Gb  fsl_lpuart_driver.o [4]
+LPUART_DRV_SendData     0x000014d9   0x62  Code  Gb  fsl_lpuart_driver.o [4]
+LPUART_DRV_StartSendData
+                        0x0000164d   0x58  Code  Lc  fsl_lpuart_driver.o [4]
+LPUART_HAL_ClearStatusFlag
+                        0x00001a61   0x92  Code  Gb  fsl_lpuart_hal.o [4]
+LPUART_HAL_GetStatusFlag
+                        0x000019fb   0x66  Code  Gb  fsl_lpuart_hal.o [4]
+LPUART_HAL_Getchar      0x000012fb    0x6  Code  Lc  fsl_lpuart_driver.o [4]
+LPUART_HAL_Init         0x000017c9   0x12  Code  Gb  fsl_lpuart_hal.o [4]
+LPUART_HAL_Putchar      0x000012f5    0x6  Code  Lc  fsl_lpuart_driver.o [4]
+LPUART_HAL_SetBaudRate  0x000017e5   0xe0  Code  Gb  fsl_lpuart_hal.o [4]
+LPUART_HAL_SetBitCountPerChar
+                        0x000018c5   0x32  Code  Gb  fsl_lpuart_hal.o [4]
+LPUART_HAL_SetIntMode   0x00001927   0xd4  Code  Gb  fsl_lpuart_hal.o [4]
+LPUART_HAL_SetParityMode
+                        0x000018f7   0x30  Code  Gb  fsl_lpuart_hal.o [4]
+LPUART_HAL_SetReceiverCmd
+                        0x000012d1   0x16  Code  Lc  fsl_lpuart_driver.o [4]
+LPUART_HAL_SetStopBitCount
+                        0x000012e7    0xe  Code  Lc  fsl_lpuart_driver.o [4]
+LPUART_HAL_SetTransmitterCmd
+                        0x000012bb   0x16  Code  Lc  fsl_lpuart_driver.o [4]
+NVIC_ClearPendingIRQ    0x0000041f    0xe  Code  Lc  fsl_tpm_driver.o [4]
+NVIC_EnableIRQ          0x00001d0d    0xe  Code  Lc  fsl_gpio_driver.o [4]
+NVIC_EnableIRQ          0x000012ad    0xe  Code  Lc  fsl_lpuart_driver.o [4]
+NVIC_EnableIRQ          0x00000411    0xe  Code  Lc  fsl_tpm_driver.o [4]
+OSA_SemaCreate          0x00001bbd   0x2a  Code  Gb  fsl_os_abstraction_bm.o [4]
+OSA_SemaPost            0x00001be7   0x32  Code  Gb  fsl_os_abstraction_bm.o [4]
+OSA_TimeDelay           0x00001c2d   0x1e  Code  Gb  fsl_os_abstraction_bm.o [4]
+OSA_TimeDiff            0x00001ba9   0x14  Code  Wk  fsl_os_abstraction_bm.o [4]
+OSA_TimeGetMsec         0x00001c4b    0xa  Code  Wk  fsl_os_abstraction_bm.o [4]
+OSA_TimeInit            0x00001b61   0x48  Code  Wk  fsl_os_abstraction_bm.o [4]
+OSC_HAL_GetExternalRefClkCmd
+                        0x00000a57   0x1a  Code  Lc  fsl_clock_MKL03Z4.o [4]
+OSC_HAL_SetExternalRefClkCmd
+                        0x00000f35    0xc  Code  Lc  fsl_clock_manager.o [4]
+OSC_HAL_SetExternalRefClkInStopModeCmd
+                        0x00000f41    0xc  Code  Lc  fsl_clock_manager.o [4]
+PORT_HAL_SetDriveStrengthMode
+                        0x00001dd1   0x2e  Code  Lc  fsl_gpio_driver.o [4]
+PORT_HAL_SetMuxMode     0x00002143   0x2c  Code  Lc  ISO7816.o [1]
+PORT_HAL_SetMuxMode     0x00001dff   0x2c  Code  Lc  fsl_gpio_driver.o [4]
+PORT_HAL_SetPassiveFilterCmd
+                        0x00001da3   0x2e  Code  Lc  fsl_gpio_driver.o [4]
+PORT_HAL_SetPinIntMode  0x00001e2b   0x2e  Code  Lc  fsl_gpio_driver.o [4]
+PORT_HAL_SetPullCmd     0x00002115   0x2e  Code  Lc  ISO7816.o [1]
+PORT_HAL_SetPullCmd     0x00001d47   0x2e  Code  Lc  fsl_gpio_driver.o [4]
+PORT_HAL_SetPullMode    0x000020e9   0x2c  Code  Lc  ISO7816.o [1]
+PORT_HAL_SetPullMode    0x00001d1b   0x2c  Code  Lc  fsl_gpio_driver.o [4]
+PORT_HAL_SetSlewRateMode
+                        0x00001d75   0x2e  Code  Lc  fsl_gpio_driver.o [4]
+RW$$Base                0x1ffffe00          --   Gb  - Linker created -
+RW$$Limit               0x1ffffe1c          --   Gb  - Linker created -
+Region$$Table$$Base     0x00002d88          --   Gb  - Linker created -
+Region$$Table$$Limit    0x00002dac          --   Gb  - Linker created -
+SIM_HAL_EnableClock     0x00002359   0x2c  Code  Lc  main.o [1]
+SIM_HAL_EnableClock     0x000009f1   0x30  Code  Lc  fsl_clock_MKL03Z4.o [4]
+SIM_HAL_EnableClock     0x00001afd   0x30  Code  Lc  fsl_os_abstraction_bm.o [4]
+SIM_HAL_GetTpmExternalClkPinSelMode
+                        0x00000993   0x4a  Code  Gb  fsl_sim_hal_MKL03Z4.o [4]
+SIM_HAL_SetTpmChSrcMode
+                        0x000020d1   0x18  Code  Lc  ISO7816.o [1]
+SIM_HAL_SetTpmExternalClkPinSelMode
+                        0x00000949   0x4a  Code  Gb  fsl_sim_hal_MKL03Z4.o [4]
+SystemCoreClock         0x1ffffe14    0x4  Data  Gb  system_MKL03Z4.o [1]
+SystemInit              0x00002cf1   0x1e  Code  Gb  system_MKL03Z4.o [1]
+TPM_DRV_GetClock        0x000006a1   0x62  Code  Gb  fsl_tpm_driver.o [4]
+TPM_DRV_Init            0x000005a5   0x72  Code  Gb  fsl_tpm_driver.o [4]
+TPM_DRV_PwmStart        0x000007a1  0x13a  Code  Gb  fsl_tpm_driver.o [4]
+TPM_DRV_PwmStop         0x00000715   0x6c  Code  Gb  fsl_tpm_driver.o [4]
+TPM_DRV_SetClock        0x0000061d   0x84  Code  Gb  fsl_tpm_driver.o [4]
+TPM_HAL_DisableChn      0x00000dbd   0x14  Code  Gb  fsl_tpm_hal.o [4]
+TPM_HAL_EnableGlobalTimeBase
+                        0x000004e7   0x16  Code  Lc  fsl_tpm_driver.o [4]
+TPM_HAL_EnablePwmMode   0x00000d45   0x78  Code  Gb  fsl_tpm_hal.o [4]
+TPM_HAL_GetChnMsnbaVal  0x00000d17   0x2e  Code  Lc  fsl_tpm_hal.o [4]
+TPM_HAL_GetClockDiv     0x00000437    0xa  Code  Lc  fsl_tpm_driver.o [4]
+TPM_HAL_GetClockMode    0x00000c8d    0xa  Code  Lc  fsl_tpm_hal.o [4]
+TPM_HAL_GetCpwms        0x00000cc1   0x18  Code  Lc  fsl_tpm_hal.o [4]
+TPM_HAL_Reset           0x00000def   0x34  Code  Gb  fsl_tpm_hal.o [4]
+TPM_HAL_SetChnCountVal  0x0000045f   0x32  Code  Lc  fsl_tpm_driver.o [4]
+TPM_HAL_SetChnMsnbaElsnbaVal
+                        0x00000cd9   0x3e  Code  Lc  fsl_tpm_hal.o [4]
+TPM_HAL_SetClockDiv     0x0000042d    0xa  Code  Lc  fsl_tpm_driver.o [4]
+TPM_HAL_SetClockMode    0x00000dd1   0x1e  Code  Gb  fsl_tpm_hal.o [4]
+TPM_HAL_SetCpwms        0x00000c97   0x2a  Code  Lc  fsl_tpm_hal.o [4]
+TPM_HAL_SetDbgMode      0x000004fd   0x1c  Code  Lc  fsl_tpm_driver.o [4]
+TPM_HAL_SetMod          0x00000441   0x1e  Code  Lc  fsl_tpm_driver.o [4]
+TPM_HAL_SetReloadOnTriggerMode
+                        0x000004bb   0x16  Code  Lc  fsl_tpm_driver.o [4]
+TPM_HAL_SetStopOnOverflowMode
+                        0x000004d1   0x16  Code  Lc  fsl_tpm_driver.o [4]
+TPM_HAL_SetTriggerMode  0x000004a5   0x16  Code  Lc  fsl_tpm_driver.o [4]
+TPM_HAL_SetTriggerSrc   0x00000491   0x14  Code  Lc  fsl_tpm_driver.o [4]
+UartStartRxNextFrame    0x00002179   0x14  Code  Gb  ISO7816.o [1]
+ZI$$Base                0x1ffffe1c          --   Gb  - Linker created -
+ZI$$Limit               0x1ffffed8          --   Gb  - Linker created -
+__RAM_VECTOR_TABLE_SIZE {Abs}
+                        0x00000000          --   Gb  command line/config [2]
+__VECTOR_RAM {Abs}      0x00000000          --   Gb  command line/config [2]
+__VECTOR_TABLE {Abs}    0x00000000          --   Gb  command line/config [2]
+__Vectors               0x00000000          --   Gb  startup_MKL03Z4.o [1]
+__Vectors_End           0x000000c0         Data  Gb  startup_MKL03Z4.o [1]
+__Vectors_Size {Abs}    0x000000c0          --   Gb  startup_MKL03Z4.o [1]
+__aeabi_assert          0x00000901   0x24  Code  Gb  ABIassert.o [6]
+__aeabi_idiv0           0x000010e9         Code  Gb  IntDivZer.o [5]
+__aeabi_memset          0x00001775         Code  Gb  ABImemset.o [5]
+__aeabi_uidiv           0x00000e39         Code  Gb  I32DivModFast.o [5]
+__aeabi_uidivmod        0x00000e39         Code  Gb  I32DivModFast.o [5]
+__cmain                 0x00002e29         Code  Gb  cmain.o [5]
+__exit                  0x000010ed   0x14  Code  Gb  exit.o [6]
+__iar_Memset4_word      0x00001795         Code  Gb  ABImemset.o [5]
+__iar_Memset_word       0x00001781         Code  Gb  ABImemset.o [5]
+__iar_copy_init3        0x00002bc5   0x30  Code  Gb  copy_init3.o [5]
+__iar_data_init3        0x00002d19   0x28  Code  Gb  data_init.o [5]
+__iar_program_start     0x00002f29         Code  Gb  cstartup_M.o [5]
+__iar_zero_init3        0x00002b21   0x3c  Code  Gb  zero_init3.o [5]
+__low_level_init        0x00002e43    0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x00000000         Data  Gb  startup_MKL03Z4.o [1]
+__vector_table_0x1c     0x0000001c         Data  Gb  startup_MKL03Z4.o [1]
+_call_main              0x00002e35         Code  Gb  cmain.o [5]
+_exit                   0x00002e51         Code  Gb  cexit.o [5]
+_main                   0x00002e3f         Code  Gb  cmain.o [5]
+abort                   0x00000ee7    0xa  Code  Gb  abort.o [3]
+dataAtr                 0x1ffffe1c   0x24  Data  Gb  ISO7816.o [1]
+exit                    0x00002e47    0x8  Code  Gb  exit.o [3]
+g_defaultClockConfigRun
+                        0x00002eec    0xc  Data  Gb  main.o [1]
+g_gpioBase              0x00002f4c    0x8  Data  Gb  fsl_gpio_common.o [4]
+g_interruptDisableCount
+                        0x1ffffed0    0x4  Data  Gb  fsl_interrupt_manager.o [4]
+g_lpuartBase            0x00002f78    0x4  Data  Gb  fsl_lpuart_common.o [4]
+g_lpuartRxTxIrqId       0x1ffffe18    0x1  Data  Gb  fsl_lpuart_common.o [4]
+g_lpuartStatePtr        0x1ffffecc    0x4  Data  Gb  fsl_lpuart_common.o [4]
+g_oscBase               0x00002f74    0x4  Data  Gb  fsl_clock_manager_common.o [4]
+g_portBase              0x00002f54    0x8  Data  Gb  fsl_gpio_common.o [4]
+g_portIrqId             0x00002e5a    0x2  Data  Gb  fsl_gpio_common.o [4]
+g_tpmBase               0x00002f64    0x8  Data  Gb  fsl_tpm_common.o [4]
+g_tpmChannelCount       0x00002f5c    0x8  Data  Gb  fsl_tpm_hal.o [4]
+g_tpmClkFreq            0x1ffffec0    0x8  Data  Gb  fsl_clock_MKL03Z4.o [4]
+g_tpmIrqId              0x00002e78    0x2  Data  Gb  fsl_tpm_common.o [4]
+g_xtal0ClkFreq          0x1ffffec8    0x4  Data  Gb  fsl_mcglite_hal.o [4]
+gpio1_OutConfig0        0x00002e7c   0x18  Data  Gb  ISO7816.o [1]
+iUartRxTime             0x1ffffebc    0x4  Data  Gb  ISO7816.o [1]
+init_data_bss           0x00002a5d   0x48  Code  Gb  startup.o [1]
+lpuartCom1_InitConfig0  0x00002ee0    0xc  Data  Gb  ISO7816.o [1]
+lpuartCom1_RxCallback   0x0000218d   0x20  Code  Gb  ISO7816.o [1]
+lpuartCom1_State        0x1ffffe40   0x3c  Data  Gb  ISO7816.o [1]
+lpuartCom1_TxCallback   0x000021ad    0xe  Code  Gb  ISO7816.o [1]
+lpuartGateTable         0x00002f86    0x1  Data  Lc  fsl_clock_MKL03Z4.o [4]
+main                    0x00002385   0x4e  Code  Gb  main.o [1]
+portGateTable           0x000010ea    0x2  Data  Lc  fsl_clock_MKL03Z4.o [4]
+s_tpmClockSource        0x1ffffed4    0x1  Data  Lc  fsl_tpm_driver.o [4]
+tpduGetC1               0x1ffffe0c    0x8  Data  Gb  main.o [1]
+tpmGateTable            0x00002e4e    0x2  Data  Lc  fsl_clock_MKL03Z4.o [4]
+tpmTmr1_ChnConfig0      0x1ffffe00    0xc  Data  Gb  ISO7816.o [1]
+tpmTmr1_InitConfig0     0x00002f34    0x8  Data  Gb  ISO7816.o [1]
+uartRxBuff              0x1ffffe7c   0x40  Data  Gb  ISO7816.o [1]
+
+
+[1] = D:\work\Applications\AppNote\ISO7816demo\iar\debug\obj
+[2] = command line
+[3] = dl6M_tln.a
+[4] = libksdk_platform.a
+[5] = rt6M_tl.a
+[6] = shb_l.a
+
+  8 724 bytes of readonly  code memory
+  2 611 bytes of readonly  data memory
+    290 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
