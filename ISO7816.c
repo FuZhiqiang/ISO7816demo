@@ -45,7 +45,7 @@ const gpio_output_pin_user_config_t gpio1_OutConfig0[] = {
 };
 
 uint8_t uartRxBuff[BUFF_LENGTH];
-uint32_t iUartRxTime;
+uint32_t iUartRxTime, iMaxWaitTimeMs = 1000;
 
 extern void LPUART_DRV_IRQHandler(uint32_t instance);
 void LPUART0_IRQHandler(void)
@@ -62,10 +62,11 @@ void UartStartRxNextFrame(void)
 
 void lpuartCom1_RxCallback(uint32_t instance, void * lpuartState)
 {
-  /* Write your code here ... */
 	lpuart_state_t* puartState;
 
 	puartState = (lpuart_state_t*)lpuartState;
+
+    TransT0Proc(*(puartState->rxBuff));
 
 	++puartState->rxBuff;
 
@@ -73,13 +74,12 @@ void lpuartCom1_RxCallback(uint32_t instance, void * lpuartState)
 	{
 		UartStartRxNextFrame();
 	}
-
+    
 	iUartRxTime = OSA_TimeGetMsec();
 }
 
 void lpuartCom1_TxCallback(uint32_t instance, void * lpuartState)
 {
-  /* Write your code here ... */
 	lpuart_state_t* puartState;
 
 	puartState = (lpuart_state_t*)lpuartState;
@@ -130,10 +130,10 @@ int Iso7816Activate(void)
 	UartStartRxNextFrame();
 	GPIO_DRV_SetPinOutput(RST);
 	//After RST is released to logic high, the ATR should come from the card within a 400/f and 40000/f period of time.
-	OSA_TimeDelay(40);
+	OSA_TimeDelay(20);
 	if(iUartRxTime)
 	{
-		while(2 >= OSA_TimeDiff(iUartRxTime, OSA_TimeGetMsec()))
+		while(iMaxWaitTimeMs >= OSA_TimeDiff(iUartRxTime, OSA_TimeGetMsec()))
 		{
 			;		//wait to IC card Answer To Reset complete
 		}

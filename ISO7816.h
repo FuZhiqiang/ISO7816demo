@@ -6,7 +6,7 @@
 
 #define BUFF_LENGTH		64
 extern uint8_t uartRxBuff[BUFF_LENGTH];
-extern uint32_t iUartRxTime;
+extern uint32_t iUartRxTime, iMaxWaitTimeMs;
 
 void UartStartRxNextFrame(void);
 void Iso7816Init(void);
