@@ -97,9 +97,9 @@ void Iso7816Init(void)
 	PORT_HAL_SetMuxMode(PORTB,1UL,kPortMuxAlt2);
 	PORT_HAL_SetPullMode(PORTB, 1, kPortPullUp);
 	PORT_HAL_SetPullCmd(PORTB, 1, true);
-	SIM_SOPT5 |= SIM_SOPT5_LPUART0ODE_MASK;		//set UART0_TX to open drain mode
-	LPUART0_CTRL |= (LPUART_CTRL_LOOPS_MASK | LPUART_CTRL_RSRC_MASK);	//set receiver input from UART0_TX
-	LPUART0_CTRL &= (~LPUART_CTRL_TXDIR_MASK);	//set it to receive mode
+	SIM_HAL_SetLpuartOpenDrainCmd(SIM, 0, true);	//set UART0_TX to open drain mode
+    LPUART_HAL_SetSingleWireCmd(LPUART0, true);	    //set receiver input from UART0_TX
+    LPUART_HAL_SetTxdirInSinglewireMode(LPUART0, kLpuartSinglewireTxdirIn);	//set it to receive mode
 
     PORT_HAL_SetMuxMode(PORTA,12UL,kPortMuxAlt2);
     SIM_HAL_SetTpmChSrcMode(SIM,TPM1_IDX,0,kSimTpmChSrc0);

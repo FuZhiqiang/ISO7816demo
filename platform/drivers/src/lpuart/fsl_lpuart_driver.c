@@ -295,7 +295,7 @@ lpuart_status_t LPUART_DRV_SendData(uint32_t instance,
     /* Indicates this is a non-blocking transaction. */
     lpuartState->isTxBlocking = false;
 
-	LPUART0_CTRL |= LPUART_CTRL_TXDIR_MASK;	//set UART0 to send mode, ISO7816
+	LPUART_HAL_SetTxdirInSinglewireMode(LPUART0, kLpuartSinglewireTxdirOut);	//set UART0 to send mode, ISO7816
     /* Start the transmission process */
     retVal = LPUART_DRV_StartSendData(instance, txBuff, txSize);
 
@@ -566,7 +566,7 @@ void LPUART_DRV_IRQHandler(uint32_t instance)
         {   /* If this was the last byte, complete transfer, will disable tx interrupt */
 			LPUART_DRV_CompleteSendData(instance);
 			LPUART_HAL_ClearStatusFlag(base, kLpuartTxDataRegEmpty);
-			LPUART0_CTRL &= (~LPUART_CTRL_TXDIR_MASK);	//set it to receive mode
+			LPUART_HAL_SetTxdirInSinglewireMode(LPUART0, kLpuartSinglewireTxdirIn);	//set it to receive mode
 		}
     }
 

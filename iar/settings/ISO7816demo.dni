@@ -1,5 +1,5 @@
 [DebugChecksum]
-Checksum=-180113401
+Checksum=310010008
 [Exceptions]
 StopOnUncaught=_ 0
 StopOnThrow=_ 0
@@ -19,10 +19,6 @@ ShowArgs=0
 MixedMode=1
 [array_types]
 Fmt0=uint8_t[256]	4	0
-[Disassemble mode]
-mode=0
-[Breakpoints]
-Count=0
 [Log file]
 LoggingEnabled=_ 0
 LogFile=_ ""
@@ -30,6 +26,10 @@ Category=_ 0
 [TermIOLog]
 LoggingEnabled=_ 0
 LogFile=_ ""
+[Disassemble mode]
+mode=0
+[Breakpoints]
+Count=0
 [Aliases]
 Count=0
 SuppressDialog=0
