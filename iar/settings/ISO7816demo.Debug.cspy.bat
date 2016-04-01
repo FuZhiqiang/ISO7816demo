@@ -21,11 +21,11 @@
 
 @echo off 
 
-if not "%1" == "" goto debugFile 
+if not "%~1" == "" goto debugFile 
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\common\bin\cspybat" -f "D:\work\Applications\AppNote\ISO7816demo\iar\settings\ISO7816demo.Debug.general.xcl" --backend -f "D:\work\Applications\AppNote\ISO7816demo\iar\settings\ISO7816demo.Debug.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.3\common\bin\cspybat" -f "D:\work\Applications\AppNote\ISO7816demo\iar\settings\ISO7816demo.Debug.general.xcl" --backend -f "D:\work\Applications\AppNote\ISO7816demo\iar\settings\ISO7816demo.Debug.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\common\bin\cspybat" -f "D:\work\Applications\AppNote\ISO7816demo\iar\settings\ISO7816demo.Debug.general.xcl" "--debug_file=%1" --backend -f "D:\work\Applications\AppNote\ISO7816demo\iar\settings\ISO7816demo.Debug.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.3\common\bin\cspybat" -f "D:\work\Applications\AppNote\ISO7816demo\iar\settings\ISO7816demo.Debug.general.xcl" "--debug_file=%~1" --backend -f "D:\work\Applications\AppNote\ISO7816demo\iar\settings\ISO7816demo.Debug.driver.xcl" 
 
 @echo off 
 :end

@@ -62,24 +62,8 @@ const clock_manager_user_config_t g_defaultClockConfigRun =
     }
 };
 
-const uint8_t apduGetC1[]={0x00, 0x84, 0x00, 0x00, 0x04};	//APDU of Get Challenge Command(get a 32-bit random number from IC card)
-uint8_t apduResponse[256];
-
-#define PROCEDURE_NULL  0x60
-#define PROCEDURE_SW1   0x90
-typedef enum{
-    IDLE, TRANS_HEADER, TRANS_PROCEDURE, TRANS_DATA, TRANS_SW1, TRANS_SW2
-}trans_step_t;
-typedef struct{
-    trans_step_t step;
-    uint8_t *pCmd;
-    uint8_t *pSend;
-    uint8_t len;
-}trans_state_t;
-trans_state_t stateTrans = {.step = IDLE,};
-
-int SendCommand(uint8_t *apduCmd, uint8_t length);
-void ResponseCallback(uint8_t *apduRsp, uint8_t length);
+void MyApduRspCallback(uint8_t *apduRsp, uint8_t length);
+uint8_t bufUart0Rx[BUFF_LENGTH];
 
 int main(void)
 {
@@ -90,123 +74,17 @@ int main(void)
     CLOCK_SYS_SetConfiguration(&g_defaultClockConfigRun);
 	OSA_TimeInit();
 
-	Iso7816Init();
-	Iso7816Activate();
-
-    if(0 == SendCommand((uint8_t*)apduGetC1, 5))
-    {
-        iTimeout = OSA_TimeGetMsec() + iMaxWaitTimeMs;
-    }
+    Iso7816Init(MyApduRspCallback);
+    Iso7816Activate(bufUart0Rx);
     
     while(true)
     {
-        if(IDLE != stateTrans.step)
-        {
-            if(iUartRxTime)	//If there is data come from UART
-            {
-                iTimeout = iUartRxTime + iMaxWaitTimeMs;
-                iUartRxTime = 0;
-            }
-            else if(iTimeout < OSA_TimeGetMsec())
-            {
-                UartStartRxNextFrame();
-                stateTrans.step = IDLE; 
-            }
-        }
-    }
-
-}
-
-int SendCommand(uint8_t *apduCmd, uint8_t length)
-{
-    assert(apduCmd);
-    assert(length >= 5);
-    
-    if(IDLE == stateTrans.step)
-    {
-        stateTrans.step = TRANS_HEADER;
-        stateTrans.pCmd = apduCmd;
-        LPUART_DRV_SendData(FSL_LPUARTCOM1, apduCmd, 5);
-        stateTrans.pSend = apduCmd + 5;
-        stateTrans.len = length - 5;
-        stateTrans.step = TRANS_PROCEDURE;
-    }
-    else
-    {
-        return 1;
-    }
-    
-    return 0;
-}
-
-void TransT0Proc(uint8_t charRx)
-{
-    static int i;
-
-    if(TRANS_PROCEDURE == stateTrans.step)
-    {
-        if(PROCEDURE_NULL == charRx)
-        {
-            return;
-        }
-        else if((PROCEDURE_SW1 == (charRx & 0xF0))
-                || (PROCEDURE_NULL == (charRx & 0xF0)))
-        {
-            apduResponse[i] = charRx;
-            i++;
-            stateTrans.step = TRANS_SW2;
-        }
-        else if(charRx == stateTrans.pCmd[1])
-        {
-            if(stateTrans.len)
-            {
-                LPUART_DRV_SendData(FSL_LPUARTCOM1, stateTrans.pSend, stateTrans.len);
-                stateTrans.len = 0;
-            }
-            if(stateTrans.pCmd[4])
-            {
-                stateTrans.step = TRANS_DATA;
-            }
-            else
-            {
-                stateTrans.step = TRANS_SW1;
-            }
-        }
-        else if(charRx == (~stateTrans.pCmd[1]))
-        {
-            if(stateTrans.len)
-            {
-                LPUART_DRV_SendData(FSL_LPUARTCOM1, stateTrans.pSend, 1);
-                stateTrans.pSend++;
-                stateTrans.len--;
-            }
-        }
-    }
-    else if(TRANS_DATA == stateTrans.step)
-    {
-        apduResponse[i] = charRx;
-        i++;
-        if(stateTrans.pCmd[4] == i)
-        {
-            stateTrans.step = TRANS_SW1;
-        }
-    }
-    else if(TRANS_SW1 == stateTrans.step)
-    {
-        apduResponse[i] = charRx;
-        i++;
-        stateTrans.step = TRANS_SW2;
-    }
-    else if(TRANS_SW2 == stateTrans.step)
-    {
-        apduResponse[i] = charRx;
-        ResponseCallback(apduResponse, i+1);
-        i = 0;
-        stateTrans.step = IDLE;
+        Iso7816CheckTimeout();
     }
 }
 
-void ResponseCallback(uint8_t *apduRsp, uint8_t length)
+void MyApduRspCallback(uint8_t *apduRsp, uint8_t length)
 {
     //write application codes here to deal with the response APDU
+	Iso7816StartRxNextFrame(bufUart0Rx);
 }

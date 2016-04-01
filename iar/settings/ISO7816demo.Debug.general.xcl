@@ -1,14 +1,14 @@
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\bin\armproc.dll" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.3\arm\bin\armproc.dll" 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\bin\armpemicro.dll" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.3\arm\bin\armpemicro.dll" 
 
 "D:\work\Applications\AppNote\ISO7816demo\iar\debug\ISO7816demo.out" 
 
---plugin "C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\bin\armbat.dll" 
+--plugin "C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.3\arm\bin\armbat.dll" 
 
---device_macro "C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\debugger\Freescale\KLxx.dmac" 
+--device_macro "C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.3\arm\config\debugger\NXP\KLxx.dmac" 
 
---flash_loader "C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\flashloader\Freescale\FlashKL03Z32K.board" 
+--flash_loader "C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.3\arm\config\flashloader\NXP\FlashKL03Z32K.board" 
 
 
 

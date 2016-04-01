@@ -6,69 +6,45 @@
   <configuration>
     <name>Debug</name>
     <outputs>
-      <file>$PROJ_DIR$\debug\obj\startup_MKL03Z4.o</file>
-      <file>$PROJ_DIR$\debug\list\ISO7816demo.map</file>
-      <file>$TOOLKIT_DIR$\lib\dl6M_tln.a</file>
-      <file>$PROJ_DIR$\..\platform\devices\MKL03Z4\linker\iar\MKL03Z32xxx4_flash.icf</file>
-      <file>$TOOLKIT_DIR$\lib\m6M_tl.a</file>
-      <file>$PROJ_DIR$\..\platform\drivers\inc\fsl_lpuart_driver.h</file>
-      <file>$PROJ_DIR$\..\platform\hal\inc\fsl_llwu_hal.h</file>
-      <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
-      <file>$PROJ_DIR$\..\platform\devices\MKL03Z4\include\MKL03Z4_features.h</file>
-      <file>$PROJ_DIR$\..\platform\drivers\inc\fsl_tpm_driver.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
-      <file>$PROJ_DIR$\..\platform\CMSIS\Include\core_cmFunc.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\string.h</file>
-      <file>$PROJ_DIR$\..\platform\hal\inc\fsl_osc_hal.h</file>
+      <file>$PROJ_DIR$\..\ISO7816.c</file>
+      <file>$PROJ_DIR$\..\ISO7816.h</file>
+      <file>$PROJ_DIR$\..\main.c</file>
       <file>$PROJ_DIR$\..\platform\osa\inc\fsl_os_abstraction_bm.h</file>
-      <file>$PROJ_DIR$\..\platform\hal\inc\fsl_smc_hal.h</file>
       <file>$PROJ_DIR$\..\platform\hal\inc\fsl_adc16_hal.h</file>
+      <file>$PROJ_DIR$\..\platform\hal\inc\fsl_smc_hal.h</file>
       <file>$PROJ_DIR$\..\platform\hal\inc\fsl_cop_hal.h</file>
       <file>$PROJ_DIR$\..\platform\system\inc\fsl_interrupt_manager.h</file>
       <file>$PROJ_DIR$\..\platform\drivers\inc\fsl_cop_driver.h</file>
       <file>$PROJ_DIR$\..\platform\drivers\inc\fsl_lptmr_driver.h</file>
+      <file>$PROJ_DIR$\..\platform\drivers\inc\fsl_rtc_driver.h</file>
+      <file>$PROJ_DIR$\..\platform\drivers\inc\fsl_vref_driver.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
       <file>$PROJ_DIR$\..\platform\hal\inc\fsl_lptmr_hal.h</file>
       <file>$PROJ_DIR$\..\platform\devices\MKL03Z4\include\MKL03Z4_extension.h</file>
       <file>$PROJ_DIR$\..\platform\hal\inc\fsl_tpm_hal.h</file>
       <file>$PROJ_DIR$\..\platform\drivers\inc\fsl_adc16_driver.h</file>
-      <file>$PROJ_DIR$\..\platform\drivers\inc\fsl_rtc_driver.h</file>
-      <file>$PROJ_DIR$\..\platform\drivers\inc\fsl_vref_driver.h</file>
-      <file>$PROJ_DIR$\..\platform\drivers\inc\fsl_i2c_master_driver.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
       <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
-      <file>$PROJ_DIR$\..\platform\drivers\inc\fsl_spi_slave_driver.h</file>
-      <file>$PROJ_DIR$\..\main.c</file>
-      <file>$PROJ_DIR$\..\ISO7816.c</file>
-      <file>$PROJ_DIR$\..\ISO7816.h</file>
-      <file>$PROJ_DIR$\..\main.h</file>
-      <file>$PROJ_DIR$\..\platform\devices\startup.h</file>
-      <file>$PROJ_DIR$\..\platform\devices\startup.c</file>
-      <file>$PROJ_DIR$\..\platform\devices\MKL03Z4\startup\system_MKL03Z4.c</file>
-      <file>$PROJ_DIR$\..\platform\devices\MKL03Z4\startup\iar\startup_MKL03Z4.s</file>
-      <file>$PROJ_DIR$\..\platform\devices\MKL03Z4\startup\system_MKL03Z4.h</file>
-      <file>$PROJ_DIR$\..\platform\utilities\src\fsl_debug_console.c</file>
-      <file>$PROJ_DIR$\..\platform\utilities\inc\fsl_debug_console.h</file>
-      <file>$PROJ_DIR$\..\platform\utilities\src\print_scan.c</file>
-      <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
       <file>$PROJ_DIR$\..\platform\CMSIS\Include\core_cmInstr.h</file>
+      <file>$PROJ_DIR$\..\platform\drivers\inc\fsl_i2c_master_driver.h</file>
       <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+      <file>$PROJ_DIR$\..\platform\drivers\inc\fsl_spi_slave_driver.h</file>
+      <file>$PROJ_DIR$\..\platform\system\src\power\fsl_power_manager_common.h</file>
       <file>$PROJ_DIR$\..\platform\hal\inc\fsl_sim_hal.h</file>
-      <file>$PROJ_DIR$\..\platform\hal\inc\fsl_rtc_hal.h</file>
       <file>$PROJ_DIR$\..\platform\hal\inc\fsl_mcglite_hal_modes.h</file>
       <file>$PROJ_DIR$\..\platform\hal\inc\fsl_lpuart_hal.h</file>
+      <file>$PROJ_DIR$\..\platform\hal\inc\fsl_rtc_hal.h</file>
       <file>$PROJ_DIR$\..\platform\hal\src\sim\MKL03Z4\fsl_sim_hal_MKL03Z4.h</file>
-      <file>$PROJ_DIR$\..\platform\system\src\power\fsl_power_manager_common.h</file>
-      <file>$PROJ_DIR$\..\platform\devices\MKL03Z4\include\fsl_bitaccess.h</file>
       <file>$PROJ_DIR$\..\platform\system\src\clock\MKL03Z4\fsl_clock_MKL03Z4.h</file>
       <file>$PROJ_DIR$\..\platform\CMSIS\Include\core_cm0plus.h</file>
+      <file>$PROJ_DIR$\..\platform\devices\MKL03Z4\include\fsl_bitaccess.h</file>
+      <file>$PROJ_DIR$\..\platform\utilities\src\print_scan.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\yfuns.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ystdio.h</file>
       <file>$PROJ_DIR$\..\platform\hal\inc\fsl_vref_hal.h</file>
       <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
       <file>$PROJ_DIR$\..\platform\hal\inc\fsl_gpio_hal.h</file>
       <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
-      <file>$PROJ_DIR$\..\platform\utilities\src\print_scan.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\yfuns.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\ystdio.h</file>
       <file>$TOOLKIT_DIR$\inc\c\xtls.h</file>
       <file>$TOOLKIT_DIR$\inc\c\xmtx.h</file>
       <file>$TOOLKIT_DIR$\inc\c\ctype.h</file>
@@ -82,10 +58,10 @@
       <file>$PROJ_DIR$\debug\obj\fsl_debug_console.o</file>
       <file>$PROJ_DIR$\debug\obj\main.o</file>
       <file>$PROJ_DIR$\debug\obj\system_MKL03Z4.o</file>
-      <file>$PROJ_DIR$\..\platform\hal\inc\fsl_spi_hal.h</file>
-      <file>$PROJ_DIR$\debug\obj\main.pbi</file>
       <file>$PROJ_DIR$\debug\ISO7816demo.out</file>
       <file>$PROJ_DIR$\..\platform\drivers\inc\fsl_gpio_driver.h</file>
+      <file>$PROJ_DIR$\debug\obj\main.pbi</file>
+      <file>$PROJ_DIR$\..\platform\hal\inc\fsl_spi_hal.h</file>
       <file>$PROJ_DIR$\debug\obj\startup.pbi</file>
       <file>$PROJ_DIR$\debug\obj\print_scan.o</file>
       <file>$PROJ_DIR$\debug\obj\system_MKL03Z4.pbi</file>
@@ -95,78 +71,88 @@
       <file>$TOOLKIT_DIR$\inc\c\assert.h</file>
       <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
       <file>$PROJ_DIR$\..\platform\system\inc\fsl_clock_manager.h</file>
+      <file>$PROJ_DIR$\..\platform\osa\inc\fsl_os_abstraction.h</file>
       <file>$PROJ_DIR$\..\platform\devices\MKL03Z4\include\MKL03Z4.h</file>
+      <file>$PROJ_DIR$\..\platform\hal\inc\fsl_port_hal.h</file>
       <file>$PROJ_DIR$\..\platform\hal\inc\fsl_i2c_hal.h</file>
+      <file>$PROJ_DIR$\..\platform\drivers\inc\fsl_cmp_driver.h</file>
       <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
       <file>$PROJ_DIR$\..\platform\drivers\inc\fsl_i2c_slave_driver.h</file>
       <file>$PROJ_DIR$\..\platform\devices\fsl_device_registers.h</file>
       <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
       <file>$PROJ_DIR$\..\platform\hal\inc\fsl_cmp_hal.h</file>
-      <file>$PROJ_DIR$\..\platform\hal\inc\fsl_port_hal.h</file>
-      <file>$PROJ_DIR$\..\platform\osa\inc\fsl_os_abstraction.h</file>
       <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+      <file>$PROJ_DIR$\..\platform\system\inc\fsl_power_manager.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
       <file>$PROJ_DIR$\..\platform\hal\inc\fsl_mcglite_hal.h</file>
       <file>$TOOLKIT_DIR$\inc\c\cmsis_iar.h</file>
-      <file>$PROJ_DIR$\..\platform\drivers\inc\fsl_cmp_driver.h</file>
-      <file>$PROJ_DIR$\..\platform\system\inc\fsl_power_manager.h</file>
-      <file>$PROJ_DIR$\..\platform\drivers\inc\fsl_spi_master_driver.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
       <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
-      <file>$TOOLKIT_DIR$\lib\rt6M_tl.a</file>
-      <file>$PROJ_DIR$\..\lib\ksdk_platform_lib\iar\KL03Z4\debug\libksdk_platform.a</file>
+      <file>$PROJ_DIR$\..\platform\drivers\inc\fsl_spi_master_driver.h</file>
+      <file>$PROJ_DIR$\..\main.h</file>
+      <file>$PROJ_DIR$\..\platform\devices\startup.h</file>
+      <file>$PROJ_DIR$\..\platform\devices\startup.c</file>
+      <file>$PROJ_DIR$\..\platform\devices\MKL03Z4\startup\system_MKL03Z4.c</file>
+      <file>$PROJ_DIR$\..\platform\devices\MKL03Z4\startup\iar\startup_MKL03Z4.s</file>
+      <file>$PROJ_DIR$\..\platform\devices\MKL03Z4\startup\system_MKL03Z4.h</file>
+      <file>$PROJ_DIR$\..\platform\utilities\src\fsl_debug_console.c</file>
+      <file>$PROJ_DIR$\..\platform\utilities\inc\fsl_debug_console.h</file>
+      <file>$PROJ_DIR$\..\platform\utilities\src\print_scan.c</file>
+      <file>$PROJ_DIR$\debug\obj\startup_MKL03Z4.o</file>
+      <file>$PROJ_DIR$\..\platform\devices\MKL03Z4\include\MKL03Z4_features.h</file>
+      <file>$PROJ_DIR$\..\platform\hal\inc\fsl_llwu_hal.h</file>
+      <file>$PROJ_DIR$\..\platform\drivers\inc\fsl_lpuart_driver.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+      <file>$PROJ_DIR$\..\platform\drivers\inc\fsl_tpm_driver.h</file>
+      <file>$PROJ_DIR$\..\platform\CMSIS\Include\core_cmFunc.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+      <file>$PROJ_DIR$\..\platform\hal\inc\fsl_osc_hal.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdarg.h</file>
     </outputs>
     <file>
       <name>[ROOT_NODE]</name>
       <outputs>
         <tool>
           <name>ILINK</name>
-          <file> 78 1</file>
+          <file> 52</file>
         </tool>
       </outputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\main.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 74</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 77</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 35 93 89 91 87 105 29 10 94 11 30 55 45 100 46 12 40 23 53 104 44 8 42 97 98 15 88 86 47 51 54 99 49 14 19 102 16 52 6 79 96 58 25 17 101 95 20 18 13 57 28 90 92 21 22 5 50 26 48 103 76 31 9 24 27 56 34</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 90 86 91 93 5 12 87 102 100 99 98 96 95 79 9 8 105 10 89 104 6 97 76 88 101 92 103 55 94 11 15 14 16 17 18 13 22 19 24 34 42 25 20 28 21 26 31 27 23 40 29 30 45 46 53 44 47 54 51 49 52 58 57 50 48 35 56</file>
-        </tool>
-      </inputs>
     </file>
     <file>
       <name>$PROJ_DIR$\..\ISO7816.c</name>
       <outputs>
         <tool>
-          <name>ICCARM</name>
-          <file> 70</file>
+          <name>BICOMP</name>
+          <file> 47</file>
         </tool>
         <tool>
-          <name>BICOMP</name>
-          <file> 71</file>
+          <name>ICCARM</name>
+          <file> 46</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
-          <name>ICCARM</name>
-          <file> 35 93 89 91 87 105 29 10 94 11 30 55 45 100 46 12 40 23 53 104 44 8 42 97 98 15 88 86 47 51 54 99 49 14 19 102 16 52 6 79 96 58 25 17 101 95 20 18 13 57 28 90 92 21 22 5 50 26 48 103 76 31 9 24 27 56 34</file>
+          <name>BICOMP</name>
+          <file> 70 72 62 68 65 9 63 7 79 78 75 67 74 8 22 14 87 95 73 66 77 80 93 89 16 19 10 11 12 96 98 3 100 5 4 6 99 13 64 27 55 1 76 69 53 71 94 81 97 92 30 17 18 20 31 21 24 29 28 25 23 37 36 26 35 82 15</file>
         </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\main.c</name>
+      <outputs>
         <tool>
           <name>BICOMP</name>
-          <file> 93 98 99 91 102 100 96 95 86 5 12 87 90 79 9 8 105 10 89 104 6 97 76 88 101 92 103 55 94 11 15 14 16 17 18 13 22 19 34 42 25 20 28 21 26 31 27 23 40 29 30 45 46 53 44 47 54 51 49 52 58 57 50 48 24 35 56</file>
+          <file> 54</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 50</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 12 72 13 75 70 80 16 96 100 7 10 5 62 99 65 89 19 11 98 95 63 3 78 77 4 6 68 64 15 8 9 22 14 87 73 79 66 93 67 74 55 1 76 69 53 71 94 81 97 92 30 17 18 20 31 21 24 29 28 25 23 37 36 26 27 35 82</file>
         </tool>
       </inputs>
     </file>
@@ -174,22 +160,18 @@
       <name>$PROJ_DIR$\..\platform\devices\startup.c</name>
       <outputs>
         <tool>
-          <name>ICCARM</name>
-          <file> 72</file>
+          <name>BICOMP</name>
+          <file> 56</file>
         </tool>
         <tool>
-          <name>BICOMP</name>
-          <file> 80</file>
+          <name>ICCARM</name>
+          <file> 48</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
-          <name>ICCARM</name>
-          <file> 36 93 89 91 87 105 29 10 94 11 30 55 45 100 46 12 40 23 53 104 44 8</file>
-        </tool>
-        <tool>
           <name>BICOMP</name>
-          <file> 91 8 11 105 89 55 10 45 93 23 40 87 29 94 46 53 36 30 12 100 104 44</file>
+          <file> 70 92 96 18 80 66 30 63 72 14 87 73 20 31 95 83 12 17 98 79 77 21</file>
         </tool>
       </inputs>
     </file>
@@ -197,22 +179,18 @@
       <name>$PROJ_DIR$\..\platform\devices\MKL03Z4\startup\system_MKL03Z4.c</name>
       <outputs>
         <tool>
-          <name>ICCARM</name>
-          <file> 75</file>
+          <name>BICOMP</name>
+          <file> 58</file>
         </tool>
         <tool>
-          <name>BICOMP</name>
-          <file> 82</file>
+          <name>ICCARM</name>
+          <file> 51</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
-          <name>ICCARM</name>
-          <file> 91 87 105 29 10 94 11 30 93 89 55 45 100 46 12 40 23 53 104 44 8</file>
-        </tool>
-        <tool>
           <name>BICOMP</name>
-          <file> 91 87 89 55 29 94 105 11 10 8 45 93 30 23 40 46 53 12 100 104 44</file>
+          <file> 70 63 12 17 18 80 95 14 87 72 96 73 66 92 30 20 31 98 79 77 21</file>
         </tool>
       </inputs>
     </file>
@@ -221,7 +199,7 @@
       <outputs>
         <tool>
           <name>AARM</name>
-          <file> 0</file>
+          <file> 91</file>
         </tool>
       </outputs>
     </file>
@@ -229,22 +207,18 @@
       <name>$PROJ_DIR$\..\platform\utilities\src\fsl_debug_console.c</name>
       <outputs>
         <tool>
-          <name>ICCARM</name>
-          <file> 73</file>
+          <name>BICOMP</name>
+          <file> 59</file>
         </tool>
         <tool>
-          <name>BICOMP</name>
-          <file> 83</file>
+          <name>ICCARM</name>
+          <file> 49</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
-          <name>ICCARM</name>
-          <file> 59 87 105 29 10 94 11 30 44 62 104 93 89 91 55 45 100 46 12 40 23 53 8 42 97 98 15 50 86 88 47 51 54 99 49 14 60 13 57 61</file>
-        </tool>
-        <tool>
           <name>BICOMP</name>
-          <file> 86 44 97 91 42 11 30 105 98 104 50 87 29 23 40 45 93 99 59 88 60 61 62 10 94 89 8 55 46 53 15 47 54 14 57 12 100 51 49 13</file>
+          <file> 17 80 14 62 21 65 87 70 101 89 63 34 20 75 77 26 95 72 78 38 64 32 33 12 96 73 66 92 30 18 31 3 24 29 100 36 98 79 28 25 99</file>
         </tool>
       </inputs>
     </file>
@@ -252,37 +226,18 @@
       <name>$PROJ_DIR$\..\platform\utilities\src\print_scan.c</name>
       <outputs>
         <tool>
-          <name>ICCARM</name>
-          <file> 81</file>
+          <name>BICOMP</name>
+          <file> 60</file>
         </tool>
         <tool>
-          <name>BICOMP</name>
-          <file> 84</file>
+          <name>ICCARM</name>
+          <file> 57</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
-          <name>ICCARM</name>
-          <file> 60 59 87 105 29 10 94 11 30 44 62 91 98 13 57 104 65 69 63 64 66 68 67</file>
-        </tool>
-        <tool>
           <name>BICOMP</name>
-          <file> 105 64 91 87 29 63 104 98 44 11 30 59 65 13 62 10 94 57 66 67 60 69 68</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\debug\ISO7816demo.out</name>
-      <outputs>
-        <tool>
-          <name>ILINK</name>
-          <file> 1</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ILINK</name>
-          <file> 3 73 70 74 81 72 0 75 107 7 106 4 2</file>
+          <file> 75 63 12 96 36 80 70 77 101 21 95 73 39 40 38 41 99 34 17 42 43 32 45 44</file>
         </tool>
       </inputs>
     </file>

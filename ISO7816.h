@@ -1,17 +1,26 @@
-#ifndef INCLUDED_ISO7816_H
-#define INCLUDED_ISO7816_H
+/*
+ * ISO7816.h
+ *
+ *  Created on: Jan 31, 2016
+ *      Author: B17589
+ */
 
-#define FSL_LPUARTCOM1	0
-#define FSL_TPMTMR1		1
+#ifndef SOURCES_ISO7816_H_
+#define SOURCES_ISO7816_H_
 
-#define BUFF_LENGTH		64
-extern uint8_t uartRxBuff[BUFF_LENGTH];
-extern uint32_t iUartRxTime, iMaxWaitTimeMs;
+#define ISO7816_MAX_WAIT_TIME_MS	1000
+#define MAX_ATR_LENGTH	    33
+#define BUFF_LENGTH        260
 
-void UartStartRxNextFrame(void);
-void Iso7816Init(void);
-void Iso7816Deactivate(void);
-int Iso7816Activate(void);
-uint32_t OSA_TimeDiff(uint32_t time_start, uint32_t time_end);
+typedef void (*TypeRspCallback)(uint8_t *apduRsp, uint8_t length);
 
-#endif //INCLUDED_ISO7816_H
+void Iso7816StartRxNextFrame(uint8_t *bufUartRx);
+void Iso7816Init(TypeRspCallback ApduRspCallback);
+int Iso7816Deactivate(void);
+int Iso7816Activate(uint8_t *bufUartRx);
+int Iso7816SendCmd(uint8_t *apduCmd, uint8_t length);
+void Iso7816TransT0Proc(uint8_t charRx, uint8_t *apduResponse);
+void Iso7816CheckTimeout(void);
+uint8_t* Iso7816GetAtrData(void);
+
+#endif /* SOURCES_ISO7816_H_ */
