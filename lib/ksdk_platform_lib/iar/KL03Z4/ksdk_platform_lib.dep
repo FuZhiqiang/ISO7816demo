@@ -5,7 +5,918 @@
   <fileChecksum>1322235074</fileChecksum>
   <configuration>
     <name>Debug</name>
-    <outputs/>
+    <outputs>
+      <file>$PROJ_DIR$\debug\obj\fsl_adc16_driver.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_clock_MKL03Z4.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_adc16_hal.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_clock_manager_common.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_cmp_common.o</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\hal\src\osc\fsl_osc_hal.c</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_os_abstraction_bm.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_clock_manager.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_adc16_common.o</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\drivers\src\adc16\fsl_adc16_common.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\osa\src\fsl_os_abstraction_bm.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\osa\inc\fsl_os_abstraction.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\osa\inc\fsl_os_abstraction_bm.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\drivers\src\adc16\fsl_adc16_driver.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\system\src\clock\fsl_clock_manager.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\drivers\inc\fsl_adc16_driver.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\hal\src\adc16\fsl_adc16_hal.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\hal\inc\fsl_adc16_hal.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\system\src\clock\fsl_clock_manager_common.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\system\inc\fsl_clock_manager.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\system\src\clock\MKL03Z4\fsl_clock_MKL03Z4.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\system\src\clock\MKL03Z4\fsl_clock_MKL03Z4.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\drivers\src\gpio\fsl_gpio_common.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\drivers\src\cmp\fsl_cmp_common.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\drivers\src\cmp\fsl_cmp_driver.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\drivers\inc\fsl_cmp_driver.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\hal\src\cmp\fsl_cmp_hal.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\hal\inc\fsl_cmp_hal.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\drivers\src\cop\fsl_cop_common.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\drivers\src\cop\fsl_cop_driver.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\drivers\inc\fsl_cop_driver.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\hal\src\cop\fsl_cop_hal.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\hal\inc\fsl_cop_hal.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\drivers\src\gpio\fsl_gpio_driver.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\system\src\hwtimer\fsl_hwtimer.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\drivers\inc\fsl_gpio_driver.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\hal\src\gpio\fsl_gpio_hal.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\hal\inc\fsl_gpio_hal.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\system\src\hwtimer\fsl_hwtimer_systick.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\system\inc\fsl_hwtimer.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\drivers\src\i2c\fsl_i2c_shared_function.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\system\inc\fsl_hwtimer_systick.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\drivers\src\i2c\fsl_i2c_common.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\drivers\inc\fsl_i2c_shared_function.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\system\src\interrupt\fsl_interrupt_manager.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\hal\src\i2c\fsl_i2c_hal.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\hal\inc\fsl_i2c_hal.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\system\inc\fsl_interrupt_manager.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\drivers\src\lptmr\fsl_lptmr_common.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\hal\src\llwu\fsl_llwu_hal.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\hal\inc\fsl_llwu_hal.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\drivers\src\lptmr\fsl_lptmr_driver.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\drivers\src\lpuart\fsl_lpuart_common.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\drivers\inc\fsl_lptmr_driver.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\hal\src\lptmr\fsl_lptmr_hal.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\hal\inc\fsl_lptmr_hal.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\drivers\src\lpuart\fsl_lpuart_driver.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\hal\src\mcglite\fsl_mcglite_hal.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\drivers\inc\fsl_lpuart_driver.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\hal\src\lpuart\fsl_lpuart_hal.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\hal\inc\fsl_lpuart_hal.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\hal\inc\fsl_mcglite_hal_modes.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\hal\src\mcglite\fsl_mcglite_hal_modes.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\hal\inc\fsl_mcglite_hal.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\hal\inc\fsl_osc_hal.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\system\src\power\fsl_power_manager.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\hal\inc\fsl_pmc_hal.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\hal\src\port\fsl_port_hal.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\hal\inc\fsl_port_hal.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\system\src\power\fsl_power_manager_common.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\system\inc\fsl_power_manager.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\hal\src\sim\MKL03Z4\fsl_sim_hal_MKL03Z4.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\hal\src\rcm\fsl_rcm_hal.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\hal\inc\fsl_rcm_hal.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\drivers\src\rtc\fsl_rtc_common.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\drivers\src\rtc\fsl_rtc_driver.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\drivers\inc\fsl_rtc_driver.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\hal\src\rtc\fsl_rtc_hal.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\hal\inc\fsl_rtc_hal.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\hal\inc\fsl_sim_hal.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\hal\src\sim\MKL03Z4\fsl_sim_hal_MKL03Z4.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\drivers\src\spi\fsl_spi_shared_function.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\hal\src\smc\fsl_smc_hal.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\hal\inc\fsl_smc_hal.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\drivers\src\spi\fsl_spi_common.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\drivers\inc\fsl_spi_shared_function.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\hal\inc\fsl_tpm_hal.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\hal\src\spi\fsl_spi_hal.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\hal\inc\fsl_spi_hal.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\drivers\src\tpm\fsl_tpm_common.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\drivers\src\tpm\fsl_tpm_driver.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\drivers\inc\fsl_tpm_driver.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\hal\src\tpm\fsl_tpm_hal.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\drivers\src\vref\fsl_vref_common.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\drivers\src\vref\fsl_vref_driver.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\drivers\inc\fsl_vref_driver.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\hal\src\vref\fsl_vref_hal.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\hal\inc\fsl_vref_hal.h</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_tpm_common.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\devices\MKL03Z4\include\MKL03Z4.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\devices\fsl_device_registers.h</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_lptmr_driver.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_port_hal.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_mcglite_hal.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_mcglite_hal_modes.o</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\CMSIS\Include\core_cmFunc.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\devices\MKL03Z4\include\fsl_bitaccess.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\devices\MKL03Z4\include\MKL03Z4_extension.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_vref_hal.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_gpio_common.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_cmp_driver.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_lptmr_common.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_lptmr_hal.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_i2c_shared_function.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_lpuart_common.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_rtc_hal.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_lpuart_driver.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_cmp_hal.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_cop_hal.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\cmsis_iar.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\CMSIS\Include\core_cmInstr.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\devices\MKL03Z4\startup\system_MKL03Z4.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\CMSIS\Include\core_cm0plus.h</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_spi_shared_function.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_spi_hal.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_i2c_common.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_tpm_driver.o</file>
+      <file>$PROJ_DIR$\debug\libksdk_platform.a</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_vref_common.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_tpm_hal.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_vref_driver.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\assert.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_smc_hal.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_spi_common.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_sim_hal_MKL03Z4.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_rtc_common.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_power_manager.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_rtc_driver.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_rcm_hal.o</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\utilities\inc\fsl_misc_utilities.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\platform\devices\MKL03Z4\include\MKL03Z4_features.h</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_cop_driver.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_hwtimer.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_cop_common.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_gpio_hal.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_llwu_hal.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_gpio_driver.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_hwtimer_systick.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_lpuart_hal.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_interrupt_manager.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_osc_hal.o</file>
+      <file>$PROJ_DIR$\debug\obj\fsl_i2c_hal.o</file>
+    </outputs>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\platform\hal\src\osc\fsl_osc_hal.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 164</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 64 101 140 141 138 104 117 109 156 161 139 102 100 129 126 125 127 108 128 111 110 112 163 150</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\platform\drivers\src\adc16\fsl_adc16_common.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 8</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 102 100 101 140 141 138 104 117 109 156 129 126 125 127 108 128 111 110 112 163 150</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\platform\osa\src\fsl_os_abstraction_bm.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 6</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 139 140 141 138 104 117 109 156 11 101 161 112 163 12 47 102 100 129 126 125 127 108 128 111 110 150 19 79 80 21 63 61 64 55</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\platform\drivers\src\adc16\fsl_adc16_driver.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 0</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 139 140 141 138 104 117 109 156 15 101 161 17 102 100 129 126 125 127 108 128 111 110 112 163 150 19 79 80 21 63 61 64 47</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\platform\system\src\clock\fsl_clock_manager.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 7</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 102 100 101 140 141 138 104 117 109 156 129 126 125 127 108 128 111 110 112 163 150 19 161 139 79 80 21 63 61 64 11 12 78</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\platform\hal\src\adc16\fsl_adc16_hal.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 2</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 17 101 140 141 138 104 117 109 156 161 139 102 100 129 126 125 127 108 128 111 110 112 163 150</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\platform\system\src\clock\fsl_clock_manager_common.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 3</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 102 100 101 140 141 138 104 117 109 156 129 126 125 127 108 128 111 110 112 163 150 19 161 139 79 80 21 63 61 64</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\platform\system\src\clock\MKL03Z4\fsl_clock_MKL03Z4.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 1</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 101 140 141 138 104 117 109 156 112 163 161 139 102 100 129 126 125 127 108 128 111 110 150 63 79 80 19 21 61 64</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\platform\drivers\src\gpio\fsl_gpio_common.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 114</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 102 100 101 140 141 138 104 117 109 156 129 126 125 127 108 128 111 110 112 163 150</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\platform\drivers\src\cmp\fsl_cmp_common.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 4</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 102 100 101 140 141 138 104 117 109 156 129 126 125 127 108 128 111 110 112 163 150</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\platform\drivers\src\cmp\fsl_cmp_driver.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 115</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 139 140 141 138 104 117 109 156 25 101 161 27 102 100 129 126 125 127 108 128 111 110 112 163 150 19 79 80 21 63 61 64 47</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\platform\hal\src\cmp\fsl_cmp_hal.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 123</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 27 101 140 141 138 104 117 109 156 161 139 102 100 129 126 125 127 108 128 111 110 112 163 150</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\platform\drivers\src\cop\fsl_cop_common.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 153</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 102 100 101 140 141 138 104 117 109 156 129 126 125 127 108 128 111 110 112 163 150</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\platform\drivers\src\cop\fsl_cop_driver.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 151</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 30 32 99 140 141 138 104 117 109 156 163 162 101 161 139 102 100 129 126 125 127 108 128 111 110 112 150 47</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\platform\hal\src\cop\fsl_cop_hal.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 124</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 32 99 140 141 138 104 117 109 156 163 162 101 161 139 102 100 129 126 125 127 108 128 111 110 112 150</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\platform\drivers\src\gpio\fsl_gpio_driver.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 157</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 35 101 140 141 138 104 117 109 156 112 163 161 68 139 102 100 129 126 125 127 108 128 111 110 150 37 19 79 80 21 63 61 64 47</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\platform\system\src\hwtimer\fsl_hwtimer.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 152</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 101 140 141 138 104 117 109 156 112 163 139 39 19 161 102 100 129 126 125 127 108 128 111 110 150 79 80 21 63 61 64</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\platform\hal\src\gpio\fsl_gpio_hal.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 154</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 37 139 140 141 138 104 117 109 156 101 161 102 100 129 126 125 127 108 128 111 110 112 163 150</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\platform\system\src\hwtimer\fsl_hwtimer_systick.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 158</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 101 140 141 138 104 117 109 156 112 163 139 39 19 161 102 100 129 126 125 127 108 128 111 110 150 79 80 21 63 61 64 41 11 12 47</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\platform\drivers\src\i2c\fsl_i2c_shared_function.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 119</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 139 140 141 138 104 117 109 156 46 161 102 100 101 129 126 125 127 108 128 111 110 112 163 150 43</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\platform\drivers\src\i2c\fsl_i2c_common.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 132</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 102 100 101 140 141 138 104 117 109 156 129 126 125 127 108 128 111 110 112 163 150</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\platform\system\src\interrupt\fsl_interrupt_manager.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 160</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 139 140 141 138 104 117 109 156 47 101 161 102 100 129 126 125 127 108 128 111 110 112 163 150</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\platform\hal\src\i2c\fsl_i2c_hal.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 165</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 46 139 140 141 138 104 117 109 156 161 102 100 101 129 126 125 127 108 128 111 110 112 163 150 149</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\platform\drivers\src\lptmr\fsl_lptmr_common.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 116</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 102 100 101 140 141 138 104 117 109 156 129 126 125 127 108 128 111 110 112 163 150</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\platform\hal\src\llwu\fsl_llwu_hal.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 155</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 50 101 140 141 138 104 117 109 156 161 139 102 100 129 126 125 127 108 128 111 110 112 163 150</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\platform\drivers\src\lptmr\fsl_lptmr_driver.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 103</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 139 140 141 138 104 117 109 156 99 163 162 53 101 161 55 102 100 129 126 125 127 108 128 111 110 112 150 79 80 47 19 21 63 61 64</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\platform\drivers\src\lpuart\fsl_lpuart_common.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 120</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 102 100 101 140 141 138 104 117 109 156 129 126 125 127 108 128 111 110 112 163 150</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\platform\hal\src\lptmr\fsl_lptmr_hal.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 118</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 55 139 140 141 138 104 117 109 156 101 161 102 100 129 126 125 127 108 128 111 110 112 163 150</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\platform\drivers\src\lpuart\fsl_lpuart_driver.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 122</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 139 140 141 138 104 117 109 156 99 163 162 58 101 161 11 112 12 60 102 100 129 126 125 127 108 128 111 110 150 19 79 80 21 63 61 64 47</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\platform\hal\src\mcglite\fsl_mcglite_hal.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 106</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 101 140 141 138 104 117 109 156 161 139 63 102 100 129 126 125 127 108 128 111 110 112 163 150</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\platform\hal\src\lpuart\fsl_lpuart_hal.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 159</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 60 101 140 141 138 104 117 109 156 161 139 102 100 129 126 125 127 108 128 111 110 112 163 150</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\platform\hal\src\mcglite\fsl_mcglite_hal_modes.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 107</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 101 140 141 138 104 117 109 156 161 139 63 102 100 129 126 125 127 108 128 111 110 112 163 150 61</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>IARCHIVE</name>
+          <file> 134</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\platform\system\src\power\fsl_power_manager.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 146</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 69 102 100 101 140 141 138 104 117 109 156 129 126 125 127 108 128 111 110 112 163 150 50 161 139 35 68 37 70 83 66 73 79 80 11 12 19 21 63 61 64 99 162</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\platform\hal\src\port\fsl_port_hal.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 105</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 68 139 140 141 138 104 117 109 156 101 161 102 100 129 126 125 127 108 128 111 110 112 163 150</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\platform\hal\src\sim\MKL03Z4\fsl_sim_hal_MKL03Z4.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 144</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 101 140 141 138 104 117 109 156 112 163 161 102 100 129 126 125 127 108 128 111 110 150 79 139 80</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\platform\hal\src\rcm\fsl_rcm_hal.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 148</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 73 101 140 141 138 104 117 109 156 161 139 102 100 129 126 125 127 108 128 111 110 112 163 150</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\platform\drivers\src\rtc\fsl_rtc_common.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 145</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 102 100 101 140 141 138 104 117 109 156 129 126 125 127 108 128 111 110 112 163 150</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\platform\drivers\src\rtc\fsl_rtc_driver.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 147</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 99 140 141 138 104 117 109 156 163 162 76 101 78 139 161 102 100 129 126 125 127 108 128 111 110 112 150 47 19 79 80 21 63 61 64</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\platform\hal\src\rtc\fsl_rtc_hal.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 121</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 78 139 140 141 138 104 117 109 156 101 161 102 100 129 126 125 127 108 128 111 110 112 163 150 63</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\platform\drivers\src\spi\fsl_spi_shared_function.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 130</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 139 140 141 138 104 117 109 156 85 161 102 100 101 129 126 125 127 108 128 111 110 112 163 150 88</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\platform\hal\src\smc\fsl_smc_hal.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 142</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 83 101 140 141 138 104 117 109 156 161 139 102 100 129 126 125 127 108 128 111 110 112 163 150</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\platform\drivers\src\spi\fsl_spi_common.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 143</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 102 100 101 140 141 138 104 117 109 156 129 126 125 127 108 128 111 110 112 163 150</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\platform\hal\src\spi\fsl_spi_hal.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 131</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 88 102 100 101 140 141 138 104 117 109 156 129 126 125 127 108 128 111 110 112 163 150 161</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\platform\drivers\src\tpm\fsl_tpm_common.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 98</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 102 100 101 140 141 138 104 117 109 156 129 126 125 127 108 128 111 110 112 163 150</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\platform\drivers\src\tpm\fsl_tpm_driver.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 133</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 91 86 102 100 101 140 141 138 104 117 109 156 129 126 125 127 108 128 111 110 112 163 150 161 139 47 19 79 80 21 63 61 64</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\platform\hal\src\tpm\fsl_tpm_hal.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 136</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 86 102 100 101 140 141 138 104 117 109 156 129 126 125 127 108 128 111 110 112 163 150 161 139</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\platform\drivers\src\vref\fsl_vref_common.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 135</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 102 100 101 140 141 138 104 117 109 156 129 126 125 127 108 128 111 110 112 163 150</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\platform\drivers\src\vref\fsl_vref_driver.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 137</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 139 140 141 138 104 117 109 156 95 97 101 161 102 100 129 126 125 127 108 128 111 110 112 163 150 19 79 80 21 63 61 64</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\platform\hal\src\vref\fsl_vref_hal.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 113</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 97 139 140 141 138 104 117 109 156 101 161 102 100 129 126 125 127 108 128 111 110 112 163 150</file>
+        </tool>
+      </inputs>
+    </file>
   </configuration>
   <configuration>
     <name>Release</name>

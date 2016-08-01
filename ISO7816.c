@@ -251,7 +251,6 @@ void Iso7816TransT0Proc(uint8_t charRx, uint8_t *apduResponse)
             {
                 LPUART_DRV_SendData(FSL_LPUARTCOM1, stateTrans.pSend, stateTrans.len);
                 stateTrans.len = 0;
-                stateTrans.step = TRANS_SW1;
             }
             else if(stateTrans.pCmd[4])
             {
